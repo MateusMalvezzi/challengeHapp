@@ -43,3 +43,24 @@
 .controls li:nth-child(2):before {
     transform: rotate(225deg);
 }
+
+
+.numbers {
+    position:absolute;
+    top:57.3%;
+    transform: translate(-2%);
+    right:0;
+    width: 80px;
+    display: flex;
+}
+
+.numbers li {
+    background:rgb(75, 187, 75);
+    position:relative;
+    width:40px;
+    height:40px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
