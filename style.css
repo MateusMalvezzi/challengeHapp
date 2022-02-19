@@ -62,5 +62,36 @@
     list-style: none;
     justify-content: center;
     align-items: center;
-    cursor:pointer;
+}
+
+.banner{
+    position:relative;
+    width:100%;
+    min-height:100vh ;
+}
+
+.banner .textBx {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+}
+
+.banner .textBx p {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+    background-position: center;
+    text-align:center;
+}
+
+.banner .textBx p.active{
+    opacity: 1;
 }

@@ -8,21 +8,49 @@
     <title>Challenge</title>
 </head>
 <body>
-    
-    <div>
+    <section class="banner">
+        <div class="textBx">
+            <p class="active">Página 01</p>
+            <p>Página 02</p>
+            <p>Página 03</p>
+            <p>Página 04</p>
+            <p>Página 05</p>
+            <p>Página 06</p>
+            <p>Página 07</p>
+            <p>Página 08</p>
+            <p>Página 09</p>
+            <p>Página 10</p>
+        </div>
+    </section>
+    <div class="move-control">
         <ul class="controls">
-            <li></li>
-            <li></li>
+            <li onclick="prevPag"></li>
+            <li onclick="nextPag"></li>
         </ul>
     </div>
     <div>
         <ul class="numbers">
-            <li></li>
-            <li></li>
+            <li ></li>
+            <li ></li>
         </ul>
     </div>
 
+<script>
+    const textBx = document.querySelector('.textBx');
+    const slides = textBx.getElementsByTagName('p');
+    var i = 0;
 
+    function nextPage() {
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length;
+        slides[1].classList.add('active');
+    }
+    function prevPage() {
+        slides[i].classList.remove('active');
+        i = (i - 1 + slides.length) % slides.length;
+        slides[1].classList.add('active');
+    }
+</script>
 
 </body>
 </html>
